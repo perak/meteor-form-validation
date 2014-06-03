@@ -6,7 +6,7 @@ Simple form validation (see forms.js). Live example here: [http://form-validatio
 Usage
 -----
 
-For each input field add element with `class="error-fieldname"` - For `<input name="price">` add `<span class="error-price"></span>`
+For each input field add element with `class="error-fieldname"`. For field `<input name="price">` add `<span class="error-price">`
 
 Example:
 
