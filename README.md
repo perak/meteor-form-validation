@@ -10,6 +10,7 @@ For each input field add element with `class="error-fieldname"`. For field `<inp
 
 Example:
 
+`````
   <form id="form1" class="form">
     <div class="form-group">
       <input name="name" placeholder="Name" class="form-control input-sm"/>
@@ -26,11 +27,13 @@ Example:
     </button>
     <button type="button" class="btn btn-link btn-sm form2-category-cancel">Cancel</button>
   </form>
+`````
 
 Or, add single element with `class="error-box"` into form.
 
 Example:
 
+`````
   <form id="form2" class="form-inline">
     <div class="error-box alert alert-warning" style="display: none;"></div>
   
@@ -42,7 +45,7 @@ Example:
     </button>
     <button type="button" class="btn btn-link btn-sm form2-cancel">Cancel</button>
   </form>
-
+`````
 
 Submit code:
 `````
