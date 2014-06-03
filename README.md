@@ -78,4 +78,22 @@ Submit code:
   }
 `````
 
+You can call `Forms.validateform` with two callback arguments:
+
+`````
+
+	Forms.validateForm(
+		form, 
+		rules, 
+		function(values) {
+			// success callback: Do something useful with values
+		},
+		function(errors) {
+			// error callback: Already shown to user, but you can do more if you want: 
+			// here you got "errors" array with objects containing "field" and "error" members.
+		}
+	);
+
+`````
+
 That's it. :)
