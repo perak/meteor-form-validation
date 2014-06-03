@@ -45,7 +45,7 @@ Example:
 
 
 Submit code:
-
+`````
   "submit #form1": function(e, t) {
   	var form = e.currentTarget;
   
@@ -73,5 +73,6 @@ Submit code:
   
   	return false;
   }
+`````
 
 That's it. :)
