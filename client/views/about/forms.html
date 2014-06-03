@@ -6,31 +6,42 @@
 	<div class="page-header"><h3>Form 1</h3></div>
 	<div class="row">
 		<div class="col-md-6">
-			<form id="form1" class="form-inline">
-				<div class="error-box alert alert-warning" style="display: none;"></div>
-				
-				<input name="name" placeholder="Name" class="form-control input-sm"/>
-				<input name="price" placeholder="Price Per Serving" class="form-control input-sm"/>
+
+			<form id="form1" class="form">
+				<div class="form-group">
+					<input name="name" placeholder="Name" class="form-control input-sm"/>
+					<span class="help-block error-name"></span>
+				</div>
+
+				<div class="form-group">
+					<input name="price" placeholder="Price Per Serving" class="form-control input-sm"/>
+					<span class="help-block error-price"></span>
+				</div>
 
 				<button type="submit" class="btn btn-primary btn-sm">
 					<span class="fa fa-check"></span> Save
 				</button>
-				<button type="button" class="btn btn-link btn-sm form1-cancel">Cancel</button>
+				<button type="button" class="btn btn-link btn-sm form1-category-cancel">Cancel</button>
 			</form>
 		</div>
 		<div class="col-md-6">
-			<strong>HTML</strong>
+			<strong>HTML:</strong>
 			<pre><code>
-&lt;form id=&quot;form1&quot; class=&quot;form-inline&quot;&gt;
-  <b>&lt;div class=&quot;error-box alert alert-warning&quot; style=&quot;display: none;&quot;&gt;&lt;/div&gt;</b>
+&lt;form id=&quot;form1&quot; class=&quot;form&quot;&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;input name=&quot;name&quot; placeholder=&quot;Name&quot; class=&quot;form-control input-sm&quot;/&gt;
+    <b>&lt;span class=&quot;error-name help-block&quot;&gt;&lt;/span&gt;</b>
+  &lt;/div&gt;
 
-  &lt;input name=&quot;name&quot; placeholder=&quot;Name&quot; class=&quot;form-control input-sm&quot;/&gt;
-  &lt;input name=&quot;price&quot; placeholder=&quot;Price Per Serving&quot; class=&quot;form-control input-sm&quot;/&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;input name=&quot;price&quot; placeholder=&quot;Price Per Serving&quot; class=&quot;form-control input-sm&quot;/&gt;
+    <b>&lt;span class=&quot;error-price help-block&quot;&gt;&lt;/span&gt;</b>
+  &lt;/div&gt;
 
   &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;
     &lt;span class=&quot;fa fa-check&quot;&gt;&lt;/span&gt; Save
   &lt;/button&gt;
-  &lt;button type=&quot;button&quot; class=&quot;btn btn-link btn-sm form1-cancel&quot;&gt;Cancel&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-link btn-sm form2-category-cancel&quot;&gt;Cancel&lt;/button&gt;
 &lt;/form&gt;
 			</code></pre>
 
@@ -66,45 +77,40 @@
 		</div>
 	</div>
 
+
 	<div class="page-header"><h3>Form 2</h3></div>
 	<div class="row">
 		<div class="col-md-6">
-
-			<form id="form2" class="form">
+			<form id="form2" class="form-inline">
+				<div class="error-box alert alert-warning" style="display: none;"></div>
+				
 				<div class="form-group">
 					<input name="name" placeholder="Name" class="form-control input-sm"/>
-					<span class="help-block error-name"></span>
 				</div>
 
 				<div class="form-group">
 					<input name="price" placeholder="Price Per Serving" class="form-control input-sm"/>
-					<span class="help-block error-price"></span>
 				</div>
 
 				<button type="submit" class="btn btn-primary btn-sm">
 					<span class="fa fa-check"></span> Save
 				</button>
-				<button type="button" class="btn btn-link btn-sm form2-category-cancel">Cancel</button>
+				<button type="button" class="btn btn-link btn-sm form2-cancel">Cancel</button>
 			</form>
 		</div>
 		<div class="col-md-6">
-			<strong>HTML:</strong>
+			<strong>HTML</strong>
 			<pre><code>
-&lt;form id=&quot;form2&quot; class=&quot;form&quot;&gt;
-  &lt;div class=&quot;form-group&quot;&gt;
-    &lt;input name=&quot;name&quot; placeholder=&quot;Name&quot; class=&quot;form-control input-sm&quot;/&gt;
-    <b>&lt;span class=&quot;error-name help-block&quot;&gt;&lt;/span&gt;</b>
-  &lt;/div&gt;
+&lt;form id=&quot;form2&quot; class=&quot;form-inline&quot;&gt;
+  <b>&lt;div class=&quot;error-box alert alert-warning&quot; style=&quot;display: none;&quot;&gt;&lt;/div&gt;</b>
 
-  &lt;div class=&quot;form-group&quot;&gt;
-    &lt;input name=&quot;price&quot; placeholder=&quot;Price Per Serving&quot; class=&quot;form-control input-sm&quot;/&gt;
-    <b>&lt;span class=&quot;error-price help-block&quot;&gt;&lt;/span&gt;</b>
-  &lt;/div&gt;
+  &lt;input name=&quot;name&quot; placeholder=&quot;Name&quot; class=&quot;form-control input-sm&quot;/&gt;
+  &lt;input name=&quot;price&quot; placeholder=&quot;Price Per Serving&quot; class=&quot;form-control input-sm&quot;/&gt;
 
   &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;
     &lt;span class=&quot;fa fa-check&quot;&gt;&lt;/span&gt; Save
   &lt;/button&gt;
-  &lt;button type=&quot;button&quot; class=&quot;btn btn-link btn-sm form2-category-cancel&quot;&gt;Cancel&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-link btn-sm form2-cancel&quot;&gt;Cancel&lt;/button&gt;
 &lt;/form&gt;
 			</code></pre>
 
@@ -139,4 +145,5 @@
 			</code></pre>
 		</div>
 	</div>
+
 </template>
