@@ -1,5 +1,5 @@
-Form validation
-===============
+Form validation for Meteor
+==========================
 
 Simple form validation (see forms.js). Live example here: [http://form-validation.meteor.com](http://form-validation.meteor.com)
 
